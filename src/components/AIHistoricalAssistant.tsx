@@ -37,7 +37,7 @@ const AIHistoricalAssistant = () => {
 
   const aiPersona: Persona = {
     id: 'ai-assistant',
-    name: 'AI Việt Nam'
+    name: 'AI Việt Nam',
     title: 'Trợ lý AI chuyên về vấn đề dân tộc',
     avatar: '/images/img2.svg',
     description: 'AI được huấn luyện chuyên sâu về vấn đề dân tộc, cương lĩnh dân tộc Mác-Lênin và chính sách dân tộc Việt Nam',
