@@ -39,22 +39,22 @@ const HomePage = () => {
     {
       icon: Target,
       title: 'Mục tiêu nghiên cứu',
-      description: 'Tìm hiểu tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Chủ tịch Hồ Chí Minh'
+      description: 'Tìm hiểu vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội, từ lý thuyết đến thực tiễn'
     },
     {
       icon: Calendar,
-      title: 'Quá trình hình thành',
-      description: 'Từ những năm đầu hoạt động cách mạng đến khi thành lập nước Việt Nam Dân chủ Cộng hòa'
+      title: 'Quá trình phát triển',
+      description: 'Từ cương lĩnh dân tộc Mác-Lênin đến chính sách dân tộc của Việt Nam hiện đại'
     },
     {
       icon: Globe,
       title: 'Bối cảnh lịch sử',
-      description: 'Thời kỳ phong trào giải phóng dân tộc và cách mạng xã hội chủ nghĩa thế giới'
+      description: 'Thời kỳ phong trào giải phóng dân tộc và xây dựng chủ nghĩa xã hội ở các nước'
     },
     {
       icon: Users,
       title: 'Ý nghĩa thời đại',
-      description: 'Tác động sâu sắc đến sự nghiệp giải phóng dân tộc và xây dựng chủ nghĩa xã hội'
+      description: 'Tác động của chính sách dân tộc đến sự phát triển bền vững và đoàn kết quốc gia'
     }
   ]
 
@@ -118,7 +118,7 @@ const HomePage = () => {
               className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
               variants={itemVariants}
             >
-              <span className="text-gradient-solid">TƯ TƯỞNG HỒ CHÍ MINH</span>
+              <span className="text-gradient-solid">DÂN TỘC TRONG THỜI KỲ</span>
               <br />
               <motion.span
                 className="text-3xl md:text-4xl text-gray-700"
@@ -126,7 +126,7 @@ const HomePage = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8 }}
               >
-                Độc lập dân tộc và Chủ nghĩa xã hội
+                Quá độ lên Chủ nghĩa Xã hội
               </motion.span>
             </motion.h1>
 
@@ -134,7 +134,8 @@ const HomePage = () => {
               className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
               variants={itemVariants}
             >
-              Khám phá và tìm hiểu tư tưởng vĩ đại của Chủ tịch Hồ Chí Minh về độc lập dân tộc và chủ nghĩa xã hội,
+              Khám phá và tìm hiểu vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội,
+              từ cương lĩnh dân tộc Mác-Lênin đến chính sách dân tộc của Việt Nam,
               với sự hỗ trợ của công nghệ hiện đại và trí tuệ nhân tạo.
             </motion.p>
 
@@ -149,16 +150,6 @@ const HomePage = () => {
                 >
                   Khám phá dòng thời gian
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
-                </Link>
-              </motion.div>
-
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  to="/quiz"
-                  className="group inline-flex items-center px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-purple-500 hover:text-purple-600 hover:bg-purple-50 hover:-translate-y-1 transition-all duration-300"
-                >
-                  Kiểm tra kiến thức
-                  <Award className="ml-2 w-5 h-5 group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300" />
                 </Link>
               </motion.div>
             </motion.div>
@@ -269,15 +260,15 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Hình ảnh lịch sử
+              Dân tộc Việt Nam - Đặc điểm và Chính sách
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những hình ảnh đặc trưng về cuộc đời và sự nghiệp của Chủ tịch Hồ Chí Minh
+              Khám phá cấu trúc, phân bố, văn hóa và chính sách phát triển của 54 dân tộc Việt Nam
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Young Ho Chi Minh Image Placeholder */}
+            {/* 54 Ethnic Groups */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift"
               initial={{ opacity: 0, y: 30 }}
@@ -287,26 +278,26 @@ const HomePage = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="/images/img-hcm-tre.jpg"
-                  alt="Hồ Chí Minh thời trẻ"
+                  src="/images/54-dan-toc.jpg"
+                  alt="54 dân tộc Việt Nam"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-2 left-2 text-white">
-                  <Globe className="w-6 h-6 mb-1" />
-                  <p className="text-xs font-semibold">Thời trẻ</p>
+                  <Users className="w-6 h-6 mb-1" />
+                  <p className="text-xs font-semibold">54 dân tộc</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Hồ Chí Minh thời trẻ</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">54 Dân tộc Việt Nam</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Hình ảnh Nguyễn Ái Quốc thời trẻ, khi bắt đầu hành trình tìm đường cứu nước
-                  và tiếp xúc với tư tưởng Mác-Lênin tại châu Âu.
+                  Việt Nam có 54 dân tộc với đặc điểm riêng biệt. Dân tộc Kinh chiếm 85,7%,
+                  53 dân tộc thiểu số chiếm 14,3% dân số nhưng ¾ diện tích lãnh thổ.
                 </p>
               </div>
             </motion.div>
 
-            {/* Communist Party Foundation */}
+            {/* Ethnic Distribution */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift"
               initial={{ opacity: 0, y: 30 }}
@@ -316,26 +307,26 @@ const HomePage = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="/images/dcs-ra-doi.jpg"
-                  alt="Thành lập Đảng Cộng sản Việt Nam"
+                  src="/images/phan-bo-dan-toc.jpg"
+                  alt="Phân bố dân tộc"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-2 left-2 text-white">
-                  <Flag className="w-6 h-6 mb-1" />
-                  <p className="text-xs font-semibold">Thành lập Đảng 1930</p>
+                  <Globe className="w-6 h-6 mb-1" />
+                  <p className="text-xs font-semibold">Phân bố địa lý</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Thành lập Đảng Cộng sản Việt Nam</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Phân bố Dân tộc</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Ngày 3/2/1930, Hồ Chí Minh thành lập Đảng Cộng sản Việt Nam,
-                  đánh dấu sự kết hợp giữa chủ nghĩa yêu nước và chủ nghĩa xã hội.
+                  Các dân tộc thiểu số phân bố ở vùng biên giới, hải đảo, vùng sâu vùng xa.
+                  Cư trú xen kẽ, không dân tộc nào có lãnh thổ riêng biệt.
                 </p>
               </div>
             </motion.div>
 
-            {/* Independence Declaration */}
+            {/* Ethnic Solidarity Tradition */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift"
               initial={{ opacity: 0, y: 30 }}
@@ -345,26 +336,26 @@ const HomePage = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="/images/29.jpg"
-                  alt="Tuyên ngôn độc lập 2/9/1945"
+                  src="/images/doan-ket-dan-toc.jpg"
+                  alt="Đoàn kết dân tộc"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-2 left-2 text-white">
-                  <Sword className="w-6 h-6 mb-1" />
-                  <p className="text-xs font-semibold">Tuyên ngôn độc lập</p>
+                  <Flag className="w-6 h-6 mb-1" />
+                  <p className="text-xs font-semibold">Đoàn kết</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Tuyên ngôn độc lập 2/9/1945</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Truyền thống Đoàn kết Dân tộc</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Chủ tịch Hồ Chí Minh đọc Tuyên ngôn độc lập tại Quảng trường Ba Đình,
-                  tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa.
+                  Các dân tộc Việt Nam có lịch sử cộng đồng: cùng dựng nước và giữ nước.
+                  Đoàn kết dân tộc là nguồn sức mạnh quyết định mọi thắng lợi lịch sử.
                 </p>
               </div>
             </motion.div>
 
-            {/* Ho Chi Minh with People */}
+            {/* Ethnic Culture */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift"
               initial={{ opacity: 0, y: 30 }}
@@ -374,26 +365,26 @@ const HomePage = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="/images/bac-ho-voi-nhan-dan.jpg"
-                  alt="Hồ Chí Minh với nhân dân"
+                  src="/images/van-hoa-dan-toc.jpg"
+                  alt="Văn hóa dân tộc"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-2 left-2 text-white">
-                  <Users className="w-6 h-6 mb-1" />
-                  <p className="text-xs font-semibold">Bác Hồ với nhân dân</p>
+                  <Heart className="w-6 h-6 mb-1" />
+                  <p className="text-xs font-semibold">Văn hóa</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Hồ Chí Minh với nhân dân</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Bản sắc Văn hóa Dân tộc</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Hình ảnh Chủ tịch Hồ Chí Minh gần gũi với nhân dân,
-                  thể hiện tư tưởng "Dân là gốc" trong triết lý chính trị của Người.
+                  Nền văn hóa Việt Nam thống nhất trong đa dạng. Mỗi dân tộc có bản sắc riêng
+                  nhưng gắn bó với bản sắc chung của cộng đồng các dân tộc.
                 </p>
               </div>
             </motion.div>
 
-            {/* Ho Chi Minh Portrait */}
+            {/* Ethnic Policy */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift"
               initial={{ opacity: 0, y: 30 }}
@@ -403,26 +394,26 @@ const HomePage = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="/images/img5.jpg"
-                  alt="Chủ tịch Hồ Chí Minh"
+                  src="/images/chinh-sach-dan-toc.jpg"
+                  alt="Chính sách dân tộc"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-2 left-2 text-white">
                   <Star className="w-6 h-6 mb-1" />
-                  <p className="text-xs font-semibold">Bác Hồ</p>
+                  <p className="text-xs font-semibold">Chính sách</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Chủ tịch Hồ Chí Minh</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Chính sách Dân tộc Việt Nam</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Chân dung Chủ tịch Hồ Chí Minh - người sáng lập ra tư tưởng độc lập dân tộc
-                  gắn liền với chủ nghĩa xã hội ở Việt Nam.
+                  Bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng tiến bộ.
+                  Xóa bỏ khoảng cách phát triển giữa các dân tộc.
                 </p>
               </div>
             </motion.div>
 
-            {/* Ho Chi Minh Thought Legacy */}
+            {/* Ethnic Development */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift"
               initial={{ opacity: 0, y: 30 }}
@@ -432,21 +423,21 @@ const HomePage = () => {
             >
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="/images/di-san-ho-chi-minh.jpg"
-                  alt="Di sản tư tưởng Hồ Chí Minh"
+                  src="/images/phat-trien-dan-toc.jpg"
+                  alt="Phát triển dân tộc"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-2 left-2 text-white">
-                  <Heart className="w-6 h-6 mb-1" />
-                  <p className="text-xs font-semibold">Di sản tư tưởng</p>
+                  <Sword className="w-6 h-6 mb-1" />
+                  <p className="text-xs font-semibold">Phát triển</p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Di sản tư tưởng Hồ Chí Minh</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Phát triển Bền vững Dân tộc</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Tư tưởng Hồ Chí Minh tiếp tục là kim chỉ nam cho sự nghiệp
-                  xây dựng và bảo vệ Tổ quốc Việt Nam xã hội chủ nghĩa.
+                  Nâng cao đời sống vật chất và tinh thần cho đồng bào dân tộc thiểu số.
+                  Phát huy bản sắc văn hóa và truyền thống đoàn kết.
                 </p>
               </div>
             </motion.div>
@@ -469,10 +460,10 @@ const HomePage = () => {
               Tính năng AI sáng tạo
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-gradient">Trò chuyện với AI Lịch sử</span>
+              <span className="text-gradient">Trò chuyện với AI Dân tộc</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Trải nghiệm học tập tương tác độc đáo với AI Assistant được huấn luyện về tư tưởng Hồ Chí Minh
+              Trải nghiệm học tập tương tác độc đáo với AI Assistant được huấn luyện về vấn đề dân tộc trong thời kỳ quá độ
             </p>
           </motion.div>
 
@@ -491,10 +482,10 @@ const HomePage = () => {
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">AI Chuyên gia tư tưởng</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">AI Chuyên gia dân tộc</h3>
                     <p className="text-gray-600 text-sm">
-                      Trò chuyện với AI được huấn luyện chuyên sâu về tư tưởng Hồ Chí Minh,
-                      cung cấp thông tin chính xác và khách quan về di sản tư tưởng vĩ đại
+                      Trò chuyện với AI được huấn luyện chuyên sâu về vấn đề dân tộc,
+                      cung cấp thông tin chính xác về cương lĩnh dân tộc Mác-Lênin và chính sách dân tộc Việt Nam
                     </p>
                   </div>
                 </div>
@@ -509,7 +500,7 @@ const HomePage = () => {
                     <h3 className="text-lg font-bold text-gray-900 mb-2">Kiến thức phong phú</h3>
                     <p className="text-gray-600 text-sm">
                       Được huấn luyện trên các tác phẩm, bài viết và tài liệu
-                      về tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh
+                      về vấn đề dân tộc, chủ nghĩa Mác-Lênin và chính sách dân tộc
                     </p>
                   </div>
                 </div>
@@ -524,7 +515,7 @@ const HomePage = () => {
                     <h3 className="text-lg font-bold text-gray-900 mb-2">Tương tác thông minh</h3>
                     <p className="text-gray-600 text-sm">
                       Hỗ trợ giọng nói tiếng Việt, câu hỏi gợi ý thông minh
-                      và phân tích sâu sắc về tư tưởng Hồ Chí Minh
+                      và phân tích sâu sắc về vấn đề dân tộc
                     </p>
                   </div>
                 </div>
@@ -544,12 +535,12 @@ const HomePage = () => {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 flex items-center space-x-3">
                   <img
                     src="/images/img2.svg"
-                    alt="AI Lịch sử Việt Nam"
+                    alt="AI Dân tộc Việt Nam"
                     className="w-10 h-10 rounded-full border-2 border-white"
                   />
                   <div>
-                    <h4 className="font-semibold">AI Tư tưởng Hồ Chí Minh</h4>
-                    <p className="text-xs opacity-90">Trợ lý AI chuyên về tư tưởng Hồ Chí Minh</p>
+                    <h4 className="font-semibold">AI Dân tộc</h4>
+                    <p className="text-xs opacity-90">Trợ lý AI chuyên về vấn đề dân tộc</p>
                   </div>
                 </div>
 
@@ -557,8 +548,8 @@ const HomePage = () => {
                                     <div className="flex justify-start">
                     <div className="bg-gray-100 p-3 rounded-2xl rounded-bl-none max-w-xs">
                       <p className="text-sm text-gray-800">
-                        Xin chào! Tôi là AI Tư tưởng Hồ Chí Minh, được huấn luyện chuyên sâu về
-                        tư tưởng độc lập dân tộc và chủ nghĩa xã hội. Bạn muốn tìm hiểu về vấn đề gì?
+                        Xin chào! Tôi là AI Dân tộc, được huấn luyện chuyên sâu về
+                        vấn đề dân tộc, cương lĩnh dân tộc Mác-Lênin và chính sách dân tộc. Bạn muốn tìm hiểu về vấn đề gì?
                       </p>
                     </div>
                   </div>
@@ -566,7 +557,7 @@ const HomePage = () => {
                   <div className="flex justify-end">
                     <div className="bg-blue-500 text-white p-3 rounded-2xl rounded-br-none max-w-xs">
                       <p className="text-sm">
-                        Dạ, tư tưởng độc lập dân tộc của Bác Hồ được hình thành như thế nào ạ?
+                        Dạ, cương lĩnh dân tộc Mác-Lênin có nội dung gì ạ?
                       </p>
                     </div>
                   </div>
@@ -574,8 +565,8 @@ const HomePage = () => {
                                     <div className="flex justify-start">
                     <div className="bg-gray-100 p-3 rounded-2xl rounded-bl-none max-w-xs">
                       <p className="text-sm text-gray-800">
-                        Tư tưởng độc lập dân tộc của Bác Hồ hình thành từ khát vọng giải phóng
-                        dân tộc khỏi ách thống trị thực dân, phong kiến...
+                        Cương lĩnh dân tộc Mác-Lênin có ba nội dung cơ bản: bình đẳng dân tộc,
+                        quyền tự quyết dân tộc, và liên hiệp công nhân...
                       </p>
                     </div>
                   </div>
@@ -584,7 +575,7 @@ const HomePage = () => {
                 <div className="p-4 border-t border-gray-100">
                   <div className="flex items-center space-x-2">
                     <div className="flex-1 bg-gray-100 rounded-xl p-3">
-                      <p className="text-sm text-gray-500">Đặt câu hỏi về tư tưởng Hồ Chí Minh...</p>
+                      <p className="text-sm text-gray-500">Đặt câu hỏi về vấn đề dân tộc...</p>
                     </div>
                     <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
                       <ArrowRight className="w-5 h-5 text-white" />
@@ -609,11 +600,11 @@ const HomePage = () => {
           >
             <div className="bg-white rounded-2xl p-8 shadow-xl max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Sẵn sàng khám phá lịch sử với AI?
+                Sẵn sàng khám phá vấn đề dân tộc với AI?
               </h3>
                             <p className="text-gray-600 mb-6">
                 Nhấn vào biểu tượng chat ở góc dưới bên phải để bắt đầu cuộc trò chuyện
-                với AI và khám phá những câu chuyện lịch sử hấp dẫn!
+                với AI và khám phá những kiến thức về dân tộc và chính sách dân tộc!
               </p>
               <div className="flex items-center justify-center space-x-4">
                 <div className="flex items-center text-sm text-gray-500">
@@ -650,34 +641,34 @@ const HomePage = () => {
 
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 mb-8">
               <blockquote className="text-xl md:text-2xl text-gray-800 font-medium italic leading-relaxed">
-                "Tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh là sự kết hợp hài hòa
-                giữa chủ nghĩa yêu nước và chủ nghĩa xã hội khoa học trong điều kiện cụ thể của Việt Nam."
+                "Dân tộc là kết quả của quá trình phát triển lâu dài của xã hội loài người.
+                Vấn đề dân tộc là một trong những vấn đề cơ bản của cách mạng xã hội chủ nghĩa."
               </blockquote>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">Độc lập</div>
+                <div className="text-3xl font-bold text-blue-600">Bình đẳng</div>
                 <div className="text-gray-600">Dân tộc</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">Chủ nghĩa</div>
-                <div className="text-gray-600">Xã hội</div>
+                <div className="text-3xl font-bold text-purple-600">Đoàn kết</div>
+                <div className="text-gray-600">Phát triển</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">Kết hợp</div>
-                <div className="text-gray-600">Hài hòa</div>
+                <div className="text-3xl font-bold text-green-600">Tôn trọng</div>
+                <div className="text-gray-600">Văn hóa</div>
               </div>
             </div>
 
             <div className="text-lg text-gray-700 leading-relaxed space-y-4">
               <p>
-                <strong>Tầm quan trọng của tư tưởng:</strong>
+                <strong>Tầm quan trọng của vấn đề dân tộc:</strong>
               </p>
               <ul className="text-left space-y-2 max-w-2xl mx-auto pl-32">
-                <li>• Định hướng con đường cách mạng Việt Nam</li>
-                <li>• Kết hợp yêu nước với chủ nghĩa quốc tế</li>
-                <li>• Nền tảng xây dựng chủ nghĩa xã hội ở Việt Nam</li>
+                <li>• Bảo đảm bình đẳng, đoàn kết giữa các dân tộc</li>
+                <li>• Phát triển bền vững vùng dân tộc thiểu số</li>
+                <li>• Nền tảng xây dựng quốc gia mạnh, dân giàu, xã hội công bằng</li>
               </ul>
             </div>
 

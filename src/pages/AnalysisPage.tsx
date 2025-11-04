@@ -18,37 +18,34 @@ import { analysisData } from '../data/analysisData'
 
 const AnalysisPage = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
-  const [selectedViewpoint, setSelectedViewpoint] = useState<'independence' | 'socialism' | 'comparison'>('comparison')
+  const [selectedViewpoint, setSelectedViewpoint] = useState<'marxism' | 'vietnam' | 'policy' | 'comparison'>('policy')
 
   const viewpoints = [
-    { id: 'independence', label: 'Tư tưởng độc lập dân tộc', color: 'from-red-500 to-red-600', icon: XCircle },
-    { id: 'socialism', label: 'Tư tưởng chủ nghĩa xã hội', color: 'from-green-500 to-green-600', icon: CheckCircle },
-    { id: 'comparison', label: 'Phân tích toàn diện', color: 'from-blue-500 to-blue-600', icon: Scale }
+    { id: 'marxism', label: 'Chủ nghĩa Mác-Lênin về dân tộc', color: 'from-red-500 to-red-600', icon: XCircle },
+    { id: 'vietnam', label: 'Dân tộc Việt Nam', color: 'from-green-500 to-green-600', icon: CheckCircle },
+    { id: 'policy', label: 'Chính sách dân tộc', color: 'from-blue-500 to-blue-600', icon: Scale }
   ]
 
   const getAnalysisIcon = (category: string) => {
-    if (category.includes('độc lập')) return Gavel
-    if (category.includes('xã hội')) return Users
-    if (category.includes('kết hợp')) return Shield
+    if (category.includes('Mác')) return Gavel
+    if (category.includes('Việt Nam')) return Users
+    if (category.includes('chính sách')) return Shield
     if (category.includes('thực tiễn')) return TrendingUp
     return BarChart3
   }
 
-  const independenceData = analysisData.filter(item => item.id === 'national-independence-thought')
-  const socialismData = analysisData.filter(item => item.id === 'socialist-thought')
-  // Additional analysis data for future expansion
-  // const otherAnalysis = analysisData.filter(item =>
-  //   !['national-independence-thought', 'socialist-thought'].includes(item.id)
-  // )
+  const marxismData = analysisData.filter(item => item.id === 'marxism-leninism-ethnicity' || item.id === 'two-tendencies-ethnicity' || item.id === 'marxist-leninist-program')
+  const vietnamData = analysisData.filter(item => item.id === 'vietnam-ethnicity-characteristics' || item.id === 'national-solidarity-tradition')
+  const policyData = analysisData.filter(item => item.id === 'ethnic-policy-vietnam')
 
   const renderViewpointContent = () => {
     switch (selectedViewpoint) {
-      case 'independence':
-        return independenceData
-      case 'socialism':
-        return socialismData
-      case 'comparison':
-        return analysisData
+      case 'marxism':
+        return marxismData
+      case 'vietnam':
+        return vietnamData
+      case 'policy':
+        return policyData
       default:
         return analysisData
     }
@@ -66,14 +63,14 @@ const AnalysisPage = () => {
         >
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6">
             <BarChart3 className="w-4 h-4 mr-2" />
-            Phân tích tư tưởng
+            Phân tích vấn đề dân tộc
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-gradient">Tư tưởng Hồ Chí Minh</span>
+            <span className="text-gradient">Dân tộc trong thời kỳ quá độ</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Phân tích sâu sắc về tư tưởng độc lập dân tộc và chủ nghĩa xã hội
-            của Chủ tịch Hồ Chí Minh.
+            Phân tích sâu sắc về vấn đề dân tộc, từ cương lĩnh dân tộc Mác-Lênin
+            đến chính sách dân tộc của Việt Nam.
           </p>
         </motion.div>
 

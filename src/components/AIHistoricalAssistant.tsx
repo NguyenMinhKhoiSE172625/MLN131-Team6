@@ -37,94 +37,92 @@ const AIHistoricalAssistant = () => {
 
   const aiPersona: Persona = {
     id: 'ai-assistant',
-    name: 'AI Tư tưởng Hồ Chí Minh',
-    title: 'Trợ lý AI chuyên về tư tưởng Hồ Chí Minh',
+    name: 'AI Việt Nam'
+    title: 'Trợ lý AI chuyên về vấn đề dân tộc',
     avatar: '/images/img2.svg',
-    description: 'AI được huấn luyện chuyên sâu về tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh',
+    description: 'AI được huấn luyện chuyên sâu về vấn đề dân tộc, cương lĩnh dân tộc Mác-Lênin và chính sách dân tộc Việt Nam',
     color: 'from-blue-500 to-purple-600',
     personality: 'intelligent'
   }
 
   const suggestedQuestions = [
-    "Tư tưởng độc lập dân tộc của Hồ Chí Minh có đặc điểm gì?",
-    "Chủ nghĩa xã hội trong tư tưởng Hồ Chí Minh như thế nào?",
-    "Hai tư tưởng này kết hợp với nhau ra sao?",
-    "Ý nghĩa lịch sử của tư tưởng Hồ Chí Minh?",
-    "Tuyên ngôn độc lập 1945 thể hiện tư tưởng gì?",
-    "Tư tưởng Hồ Chí Minh có ảnh hưởng gì đến hiện tại?",
-    "Đặc điểm sáng tạo trong tư tưởng Hồ Chí Minh?",
-    "Giá trị thời đại của tư tưởng Hồ Chí Minh?"
+    "Cương lĩnh dân tộc Mác-Lênin có nội dung gì?",
+    "Đặc điểm dân tộc Việt Nam là gì?",
+    "Chính sách dân tộc của Việt Nam như thế nào?",
+    "Truyền thống đoàn kết dân tộc Việt Nam?",
+    "Hai xu hướng phát triển dân tộc là gì?",
+    "Vấn đề dân tộc có ý nghĩa gì?",
+    "Bình đẳng dân tộc được thực hiện ra sao?",
+    "Phát triển bền vững vùng dân tộc thiểu số?"
   ]
 
   const initialMessage = useMemo(() =>
-    "Xin chào! Tôi là AI Tư tưởng Hồ Chí Minh, được huấn luyện chuyên sâu về tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Chủ tịch Hồ Chí Minh. Tôi có thể giúp bạn tìm hiểu về quá trình hình thành, đặc điểm, sự kết hợp hài hòa giữa hai tư tưởng này và ý nghĩa lịch sử của chúng. Bạn muốn tìm hiểu về vấn đề gì?"
+    "Xin chào! Tôi là AI Dân tộc, được huấn luyện chuyên sâu về vấn đề dân tộc, cương lĩnh dân tộc Mác-Lênin và chính sách dân tộc Việt Nam. Tôi có thể giúp bạn tìm hiểu về khái niệm dân tộc, cương lĩnh dân tộc, đặc điểm dân tộc Việt Nam, chính sách dân tộc và ý nghĩa thời đại. Bạn muốn tìm hiểu về vấn đề gì?"
   , [])
 
   const getOfflineResponse = (message: string): string | null => {
     const lowerMessage = message.toLowerCase()
 
     const responses: { [key: string]: string } = {
-      "tư tưởng độc lập dân tộc": `Tư tưởng độc lập dân tộc của Hồ Chí Minh:
+      "cương lĩnh dân tộc": `Cương lĩnh dân tộc Mác-Lênin:
 
-🏛️ **Bản chất**: Giải phóng dân tộc khỏi ách thống trị của thực dân, đế quốc
+🏛️ **Ba nội dung cơ bản**:
+• Các dân tộc hoàn toàn bình đẳng
+• Các dân tộc có quyền tự quyết
+• Liên hiệp công nhân tất cả các dân tộc
 
-🌟 **Đặc điểm**:
-• Độc lập chính trị hoàn toàn
-• Tự chủ kinh tế
-• Bảo vệ chủ quyền lãnh thổ
-• Bình đẳng dân tộc
+🌟 **Bình đẳng dân tộc**: Không phân biệt lớn nhỏ, trình độ cao thấp
 
-🎯 **Mục tiêu**: Xây dựng nước Việt Nam độc lập, tự do, hạnh phúc
+🎯 **Quyền tự quyết**: Tự định đoạt vận mệnh, chế độ, con đường phát triển
 
-📜 **Thể hiện**: Tuyên ngôn độc lập 2/9/1945`,
+🤝 **Liên hiệp**: Gắn bó giữa giải phóng dân tộc và giai cấp`,
 
-      "chủ nghĩa xã hội": `Tư tưởng chủ nghĩa xã hội của Hồ Chí Minh:
+      "đặc điểm dân tộc": `Đặc điểm dân tộc Việt Nam:
 
-⚖️ **Công bằng xã hội**: Xóa bỏ bóc lột, áp bức
+📊 **Cấu trúc dân số**:
+• Kinh 85,7%, 53 dân tộc thiểu số 14,3%
+• Cư trú xen kẽ, không có lãnh thổ riêng biệt
 
-👥 **Dân chủ nhân dân**: Quyền làm chủ của nhân dân lao động
+🗺️ **Phân bố địa lý**: 53 dân tộc thiểu số chiếm ¾ diện tích lãnh thổ
 
-🏭 **Kinh tế**: Phát triển kinh tế vì con người
+⚖️ **Trình độ phát triển**: Không đồng đều giữa các dân tộc
 
-🎓 **Văn hóa**: Xây dựng nền văn hóa dân tộc, khoa học, đại chúng
+🌍 **Quan hệ quốc tế**: Một số dân tộc có huyết thống với dân tộc nước láng giềng`,
 
-🌱 **Đặc sắc**: Phù hợp với điều kiện Việt Nam`,
+      "chính sách dân tộc": `Chính sách dân tộc Việt Nam:
 
-      "kết hợp": `Sự kết hợp tư tưởng độc lập dân tộc và chủ nghĩa xã hội:
+✅ **Bốn nguyên tắc cơ bản**:
+• Bình đẳng, đoàn kết, tôn trọng
+• Giúp nhau cùng tiến bộ
 
-🤝 **Hài hòa**: Hai tư tưởng bổ trợ, thống nhất với nhau
+🎯 **Mục tiêu**:
+• Xóa bỏ khoảng cách phát triển
+• Nâng cao đời sống vật chất - tinh thần
+• Phát huy bản sắc văn hóa
 
-🎯 **Mục tiêu chung**: Giải phóng dân tộc và giải phóng xã hội
+🏗️ **Thực hiện**: Kết hợp xây dựng và bảo vệ Tổ quốc`,
 
-⚡ **Sáng tạo**: Vận dụng Mác-Lênin vào điều kiện Việt Nam
+      "đoàn kết dân tộc": `Truyền thống đoàn kết dân tộc Việt Nam:
 
-🏗️ **Thực tiễn**: Từ đấu tranh giải phóng đến xây dựng đất nước
+📚 **Lịch sử cộng đồng**: Các dân tộc cùng dựng nước và giữ nước
 
-🌟 **Ý nghĩa**: Tạo nên con đường cách mạng độc đáo của Việt Nam`,
+💪 **Nguồn sức mạnh**: Đoàn kết là yếu tố quyết định mọi thắng lợi
 
-      "ý nghĩa": `Ý nghĩa lịch sử của tư tưởng Hồ Chí Minh:
+🎨 **Văn hóa**: Nền văn hóa thống nhất trong đa dạng
 
-🇻🇳 **Đối với Việt Nam**: Dẫn dắt cách mạng thành công, xây dựng đất nước
+⚠️ **Cảnh báo**: Cần chống chia rẽ dân tộc, âm mưu xâm lược`,
 
-🌍 **Đối với thế giới**: Góp phần vào phong trào giải phóng dân tộc
+      "ý nghĩa": `Ý nghĩa của vấn đề dân tộc:
 
-📚 **Giá trị lý luận**: Phát triển sáng tạo chủ nghĩa Mác-Lênin
+🇻🇳 **Đối với Việt Nam**: Nền tảng đoàn kết, phát triển bền vững
+
+🌍 **Đối với thế giới**: Kinh nghiệm quý báu cho các dân tộc
+
+📚 **Giá trị lý luận**: Phát triển cương lĩnh dân tộc Mác-Lênin
 
 ⏰ **Tính thời đại**: Vẫn có giá trị định hướng hiện tại
 
-🎓 **Di sản**: Tài sản tinh thần quý báu của dân tộc`,
-
-      "tuyên ngôn độc lập": `Tuyên ngôn độc lập 2/9/1945:
-
-📜 **Ý nghĩa**: Thể hiện rõ nét tư tưởng độc lập dân tộc
-
-🏛️ **Nội dung**: Tuyên bố độc lập, thành lập nước Việt Nam Dân chủ Cộng hòa
-
-⚖️ **Nguyên tắc**: Dựa trên quyền bình đẳng của các dân tộc
-
-🌟 **Đặc sắc**: Kết hợp truyền thống dân tộc với tinh thần thời đại
-
-🎯 **Tầm nhìn**: Hướng tới xã hội dân chủ, văn minh`
+🎓 **Di sản**: Tài sản tinh thần quý báu của dân tộc`
     }
 
     for (const [keyword, response] of Object.entries(responses)) {
@@ -135,7 +133,7 @@ const AIHistoricalAssistant = () => {
 
     // Check for common greetings
     if (lowerMessage.includes('xin chào') || lowerMessage.includes('hello') || lowerMessage.includes('chào')) {
-      return "Xin chào! Tôi có thể giúp bạn tìm hiểu về tư tưởng Hồ Chí Minh. Bạn muốn hỏi về: Tư tưởng độc lập dân tộc, Chủ nghĩa xã hội, Sự kết hợp hai tư tưởng, Ý nghĩa lịch sử, hay Tuyên ngôn độc lập?"
+      return "Xin chào! Tôi có thể giúp bạn tìm hiểu về vấn đề dân tộc. Bạn muốn hỏi về: Cương lĩnh dân tộc, Đặc điểm dân tộc Việt Nam, Chính sách dân tộc, Đoàn kết dân tộc, hay Ý nghĩa thời đại?"
     }
 
     return null
@@ -241,8 +239,8 @@ NGUYÊN TẮC TRẢ LỜI:
       const completion = await openai.chat.completions.create({
         model: "gpt-4o-mini",
         messages: messages,
-        max_tokens: 1000,
-        temperature: 0.7
+        max_tokens: 500,
+        temperature: 0.5
       })
 
       const reply = completion.choices[0]?.message?.content || "Xin lỗi, tôi không thể tạo phản hồi lúc này."
@@ -254,9 +252,9 @@ NGUYÊN TẮC TRẢ LỜI:
         { role: 'assistant', content: reply }
       ]
 
-      // Keep only last 10 exchanges to prevent context from getting too long
-      if (updatedHistory.length > 20) {
-        updatedHistory.splice(0, updatedHistory.length - 20)
+      // Keep only last 5 exchanges to prevent context from getting too long and speed up responses
+      if (updatedHistory.length > 10) {
+        updatedHistory.splice(0, updatedHistory.length - 10)
       }
 
       localStorage.setItem('ai-chat-history', JSON.stringify(updatedHistory))

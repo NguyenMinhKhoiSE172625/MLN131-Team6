@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage'
 import TimelinePage from './pages/TimelinePage'
 import AnalysisPage from './pages/AnalysisPage'
 import ConclusionPage from './pages/ConclusionPage'
-import QuizPage from './pages/QuizPage'
+import CQPage from './pages/CQPage'
 import DocumentsPage from './pages/DocumentsPage'
 import ScrollToTop from './components/ScrollToTop'
 import AIHistoricalAssistant from './components/AIHistoricalAssistant'
@@ -23,7 +23,7 @@ function App() {
             <Route path="/timeline" element={<TimelinePage />} />
             <Route path="/analysis" element={<AnalysisPage />} />
             <Route path="/conclusion" element={<ConclusionPage />} />
-            <Route path="/quiz" element={<QuizPage />} />
+            <Route path="/cq" element={<CQPage />} />
             <Route path="/documents" element={<DocumentsPage />} />
           </Routes>
         </AnimatePresence>

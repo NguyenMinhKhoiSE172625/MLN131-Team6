@@ -17,54 +17,54 @@ import {
 
 const ConclusionPage = () => {
   const mainConclusion = {
-    title: "TƯ TƯỞNG VĨ ĐẠI CỦA HỒ CHÍ MINH",
-    description: "Tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh là sự kết hợp hài hòa, sáng tạo và phù hợp với điều kiện Việt Nam"
+    title: "DÂN TỘC TRONG THỜI KỲ QUÁ ĐỘ LÊN CHỦ NGHĨA XÃ HỘI",
+    description: "Vấn đề dân tộc là một trong những vấn đề cơ bản của cách mạng xã hội chủ nghĩa, đòi hỏi bình đẳng, đoàn kết và phát triển bền vững"
   }
 
   const theoreticalBasis = [
-    "Kết hợp sáng tạo: Vận dụng chủ nghĩa Mác-Lênin vào điều kiện cụ thể của Việt Nam",
-    "Tính khoa học: Dựa trên quy luật khách quan của lịch sử và xã hội",
-    "Tính thực tiễn: Xuất phát từ thực tế và phục vụ thực tiễn cách mạng"
+    "Cơ sở lý luận: Cương lĩnh dân tộc Mác-Lênin về bình đẳng, quyền tự quyết và liên hiệp",
+    "Tính khoa học: Dựa trên quy luật phát triển của xã hội loài người",
+    "Tính thực tiễn: Xuất phát từ thực tế đa dân tộc của Việt Nam"
   ]
 
   const practicalBasis = [
-    "Thành công lịch sử: Dẫn dắt cách mạng Việt Nam từ thắng lợi này đến thắng lợi khác",
-    "Tính hiện thực: Phù hợp với điều kiện kinh tế - xã hội của Việt Nam",
-    "Sức sống mãnh liệt: Tiếp tục là kim chỉ nam trong thời kỳ đổi mới"
+    "Thành công lịch sử: Đoàn kết dân tộc dẫn dắt cách mạng Việt Nam thắng lợi",
+    "Tính hiện thực: Phù hợp với điều kiện kinh tế - xã hội của các dân tộc Việt Nam",
+    "Sức sống mãnh liệt: Tiếp tục là nền tảng phát triển bền vững"
   ]
 
   const valueBasis = [
-    "Tính nhân văn: Đặt con người làm trung tâm của mọi chính sách",
-    "Tính dân tộc: Giữ gìn và phát huy bản sắc văn hóa dân tộc",
-    "Tính thời đại: Hướng tới những giá trị tiến bộ của nhân loại"
+    "Tính nhân văn: Bảo đảm quyền lợi và phát triển của tất cả dân tộc",
+    "Tính dân tộc: Giữ gìn và phát huy bản sắc văn hóa của mỗi dân tộc",
+    "Tính thời đại: Hướng tới sự phát triển công bằng và bền vững"
   ]
 
   const characteristics = [
     {
       icon: Flag,
-      title: "Tính độc lập dân tộc",
+      title: "Bình đẳng dân tộc",
       points: [
-        "Khát vọng giải phóng dân tộc khỏi ách thống trị",
-        "Xây dựng nhà nước độc lập, tự chủ",
-        "Đại đoàn kết toàn dân tộc"
+        "Các dân tộc hoàn toàn bình đẳng không phân biệt lớn nhỏ",
+        "Không có dân tộc áp bức hay bị áp bức",
+        "Bảo đảm quyền lợi bình đẳng cho tất cả"
       ]
     },
     {
       icon: Globe,
-      title: "Tính chủ nghĩa xã hội",
+      title: "Đoàn kết dân tộc",
       points: [
-        "Xóa bỏ chế độ bóc lột, xây dựng xã hội công bằng",
-        "Nhân dân làm chủ đất nước",
-        "Phát triển toàn diện con người"
+        "Các dân tộc cùng phát triển, cùng tiến bộ",
+        "Tôn trọng bản sắc văn hóa của mỗi dân tộc",
+        "Giúp nhau vượt qua khó khăn"
       ]
     },
     {
       icon: Users,
-      title: "Tính kết hợp hài hòa",
+      title: "Phát triển bền vững",
       points: [
-        "Độc lập dân tộc là tiền đề, chủ nghĩa xã hội là định hướng",
-        "Bổ sung và thúc đẩy lẫn nhau",
-        "Phù hợp với điều kiện cụ thể của Việt Nam"
+        "Xóa bỏ khoảng cách phát triển giữa các dân tộc",
+        "Nâng cao đời sống vật chất và tinh thần",
+        "Phát triển kinh tế - xã hội toàn diện"
       ]
     }
   ]
@@ -74,17 +74,17 @@ const ConclusionPage = () => {
       icon: Flag,
       title: "Đối với Việt Nam",
       points: [
-        "Định hướng con đường cách mạng và xây dựng đất nước",
-        "Nền tảng tư tưởng cho sự nghiệp đổi mới",
-        "Kim chỉ nam cho các thế hệ mai sau"
+        "Nền tảng cho sự đoàn kết và phát triển của các dân tộc",
+        "Định hướng chính sách phát triển vùng dân tộc thiểu số",
+        "Kim chỉ nam cho xây dựng quốc gia mạnh, dân giàu"
       ]
     },
     {
       icon: Globe,
       title: "Đối với thế giới",
       points: [
-        "Mô hình kết hợp độc lập dân tộc với chủ nghĩa xã hội",
-        "Kinh nghiệm quý báu cho các dân tộc bị áp bức",
+        "Mô hình bình đẳng, đoàn kết giữa các dân tộc",
+        "Kinh nghiệm quý báu cho các nước đa dân tộc",
         "Đóng góp vào kho tàng tư tưởng nhân loại"
       ]
     }
@@ -93,19 +93,19 @@ const ConclusionPage = () => {
   const lessons = [
     {
       icon: Shield,
-      title: "Về xây dựng tư tưởng cách mạng",
+      title: "Về chính sách dân tộc",
       points: [
-        "Phải kết hợp tính dân tộc với tính thời đại",
-        "Vận dụng sáng tạo lý luận vào thực tiễn",
-        "Xuất phát từ lợi ích của nhân dân"
+        "Phải bảo đảm bình đẳng, đoàn kết giữa các dân tộc",
+        "Vận dụng sáng tạo cương lĩnh dân tộc vào thực tiễn",
+        "Xuất phát từ lợi ích của tất cả các dân tộc"
       ]
     },
     {
       icon: Heart,
-      title: "Về lãnh đạo cách mạng",
+      title: "Về phát triển bền vững",
       points: [
-        "Cần có tư tưởng chỉ đạo đúng đắn",
-        "Phải gắn bó mật thiết với nhân dân",
+        "Cần xóa bỏ khoảng cách phát triển giữa các dân tộc",
+        "Phải tôn trọng bản sắc văn hóa của mỗi dân tộc",
         "Kiên định mục tiêu, linh hoạt về phương pháp"
       ]
     }
@@ -130,7 +130,7 @@ const ConclusionPage = () => {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Dựa trên phân tích toàn diện, chúng ta đưa ra kết luận khách quan
-            về tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh.
+            về vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.
           </p>
         </motion.div>
 

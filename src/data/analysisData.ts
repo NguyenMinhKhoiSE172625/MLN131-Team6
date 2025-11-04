@@ -2,107 +2,104 @@ import type { AnalysisPoint } from '../types';
 
 export const analysisData: AnalysisPoint[] = [
   {
-    id: 'national-independence-thought',
-    category: 'Tư tưởng độc lập dân tộc',
-    title: 'Nội dung và đặc điểm',
+    id: 'marxism-leninism-ethnicity',
+    category: 'Chủ nghĩa Mác-Lênin về dân tộc',
+    title: 'Khái niệm và đặc trưng cơ bản',
     content: [
-      'Khát vọng độc lập: Giải phóng dân tộc khỏi ách thống trị thực dân, phong kiến',
-      'Chủ quyền quốc gia: Xây dựng nhà nước độc lập, tự chủ',
-      'Đại đoàn kết: Đoàn kết toàn dân tộc trong sự nghiệp giải phóng',
-      'Tự lực cánh sinh: Dựa vào sức mạnh của nhân dân để giành độc lập'
+      'Dân tộc là kết quả của quá trình phát triển lâu dài của xã hội loài người',
+      'Phương thức sản xuất là yếu tố quyết định sự hình thành dân tộc',
+      'Dân tộc có hai nghĩa: quốc gia dân tộc (nation) và dân tộc-tộc người (ethnic group)',
+      'Đặc trưng dân tộc: phương thức sinh hoạt kinh tế, lãnh thổ, nhà nước, ngôn ngữ, văn hóa'
     ],
     evidence: [
-      'Tuyên ngôn độc lập 2/9/1945: "Tất cả mọi người đều sinh ra có quyền bình đẳng"',
-      'Thành lập Việt Minh 1941: Đoàn kết toàn dân chống thực dân, phát xít',
-      'Chiến thắng Điện Biên Phủ 1954: Khẳng định ý chí độc lập của dân tộc',
-      'Di chúc Hồ Chí Minh: "Độc lập dân tộc và chủ nghĩa xã hội là hai mục tiêu chiến lược"'
+      'Ở phương Tây, dân tộc ra đời khi chủ nghĩa tư bản thay thế phương thức sản xuất phong kiến',
+      'Ở phương Đông, dân tộc hình thành trên cơ sở văn hóa-tâm lý dân tộc-cộng đồng kinh tế',
+      'Ba tiêu chí xác định dân tộc-tộc người: ngôn ngữ, văn hóa, ý thức tộc người',
+      'Ý thức tự giác tộc người là yếu tố quyết định sự tồn tại và phát triển'
     ]
   },
   {
-    id: 'socialist-thought',
-    category: 'Tư tưởng chủ nghĩa xã hội',
-    title: 'Nội dung và đặc điểm Việt Nam',
+    id: 'two-tendencies-ethnicity',
+    category: 'Hai xu hướng phát triển dân tộc',
+    title: 'Xu hướng tách ra và liên hiệp',
     content: [
-      'Công bằng xã hội: Xóa bỏ chế độ bóc lột, xây dựng xã hội bình đẳng',
-      'Dân chủ nhân dân: Nhân dân làm chủ đất nước',
-      'Phát triển toàn diện: Kinh tế, chính trị, văn hóa, xã hội',
-      'Con người mới: Xây dựng con người xã hội chủ nghĩa có đạo đức'
+      'Xu hướng tách ra để hình thành dân tộc độc lập: xuất phát từ ý thức dân tộc và quyền tự quyết',
+      'Xu hướng liên hiệp giữa các dân tộc: khi lực lượng sản xuất phát triển, nhu cầu hợp tác tăng',
+      'Hai xu hướng đồng thời tồn tại và tác động qua lại',
+      'Vừa khẳng định quyền độc lập, vừa thúc đẩy hợp tác và hội nhập'
     ],
     evidence: [
-      'Cương lĩnh Đảng 1930: Kết hợp cách mạng dân tộc với cách mạng xã hội chủ nghĩa',
-      'Cải cách ruộng đất 1953-1956: "Ruộng đất về tay người cày"',
-      'Hiến pháp 1946: Quy định quyền làm chủ của nhân dân',
-      'Xây dựng chủ nghĩa xã hội ở miền Bắc 1954-1975'
+      'Phong trào giải phóng dân tộc thế kỷ XX: hàng trăm quốc gia thoát ách thuộc địa',
+      'Hình thành các liên minh khu vực: ASEAN, EU, v.v.',
+      'Toàn cầu hóa tạo nhu cầu hợp tác giữa các dân tộc',
+      'Bảo vệ quyền tự quyết dân tộc trong khuôn khổ hợp tác quốc tế'
     ]
   },
   {
-    id: 'combination-analysis',
-    category: 'Sự kết hợp hài hòa',
-    title: 'Độc lập dân tộc gắn với chủ nghĩa xã hội',
+    id: 'marxist-leninist-program',
+    category: 'Cương lĩnh dân tộc Mác-Lênin',
+    title: 'Ba nội dung cơ bản',
     content: [
-      'Thống nhất mục tiêu: Độc lập dân tộc là tiền đề, chủ nghĩa xã hội là định hướng',
-      'Bổ sung lẫn nhau: Độc lập để xây dựng xã hội công bằng, xã hội công bằng để bảo vệ độc lập',
-      'Phù hợp điều kiện: Kết hợp phù hợp với điều kiện lịch sử cụ thể của Việt Nam',
-      'Tính sáng tạo: Vận dụng sáng tạo chủ nghĩa Mác-Lênin vào thực tiễn Việt Nam'
+      'Các dân tộc hoàn toàn bình đẳng: không phân biệt lớn nhỏ, trình độ cao thấp',
+      'Các dân tộc có quyền tự quyết: tự định đoạt vận mệnh, chế độ, con đường phát triển',
+      'Liên hiệp công nhân tất cả các dân tộc: gắn bó giữa giải phóng dân tộc và giai cấp'
     ],
     evidence: [
-      'Cương lĩnh Đảng 1930: "Làm cách mạng dân tộc dân chủ nhân dân"',
-      'Tuyên ngôn độc lập 1945: Kết hợp độc lập với dân chủ',
-      'Đường lối kháng chiến kiến quốc: Vừa đánh giặc, vừa xây dựng đất nước',
-      'Di chúc Hồ Chí Minh: "Hai mục tiêu chiến lược của cách mạng Việt Nam"'
+      'Bình đẳng phải được thể chế hóa bằng pháp luật và thực hiện thực tế',
+      'Quyền tự quyết bao gồm quyền tách ra hoặc tự nguyện liên hiệp',
+      'Liên hiệp công nhân là nền tảng của tình đoàn kết quốc tế chân chính',
+      'Cần cảnh giác với việc lợi dụng chiêu bài "tự quyết dân tộc" để chia rẽ'
     ]
   },
   {
-    id: 'historical-significance',
-    category: 'Ý nghĩa lịch sử',
-    title: 'Tác động và ảnh hưởng',
+    id: 'vietnam-ethnicity-characteristics',
+    category: 'Đặc điểm dân tộc Việt Nam',
+    title: 'Cấu trúc và phân bố dân tộc',
     content: [
-      'Định hướng cách mạng: Chỉ ra con đường cách mạng đúng đắn cho Việt Nam',
-      'Mô hình cho thế giới: Kinh nghiệm quý báu cho các dân tộc bị áp bức',
-      'Nền tảng xây dựng: Cơ sở tư tưởng xây dựng đất nước',
-      'Di sản tinh thần: Tài sản vô giá của dân tộc Việt Nam'
+      'Chênh lệch lớn về dân số: Kinh 85,7%, 53 dân tộc thiểu số 14,3%',
+      'Cư trú xen kẽ: không dân tộc nào có lãnh thổ riêng biệt',
+      'Phân bố ở vùng chiến lược: 53 dân tộc thiểu số chiếm ¾ diện tích lãnh thổ',
+      'Trình độ phát triển không đồng đều giữa các dân tộc'
     ],
     evidence: [
-      'Thành công cách mạng Tháng Tám 1945',
-      'Chiến thắng trong hai cuộc kháng chiến',
-      'Xây dựng thành công chủ nghĩa xã hội ở Việt Nam',
-      'Ảnh hưởng tích cực đến phong trào giải phóng dân tộc thế giới',
-      'Tiếp tục là kim chỉ nam trong thời kỳ đổi mới'
+      'Một số dân tộc có hàng triệu người (Tày, Thái, Mường, Khmer, Mông)',
+      'Một số dân tộc chỉ vài trăm người (Si La, Brâu, Ơ Đu)',
+      'Dân tộc thiểu số sống ở biên giới, hải đảo, vùng sâu vùng xa',
+      'Một số dân tộc có quan hệ huyết thống với dân tộc nước láng giềng'
     ]
   },
   {
-    id: 'practical-application',
-    category: 'Vận dụng thực tiễn',
-    title: 'Áp dụng trong các giai đoạn lịch sử',
+    id: 'national-solidarity-tradition',
+    category: 'Truyền thống đoàn kết dân tộc',
+    title: 'Lịch sử cộng đồng và bản sắc văn hóa',
     content: [
-      'Giai đoạn giành độc lập: Lãnh đạo cách mạng Tháng Tám và kháng chiến',
-      'Giai đoạn xây dựng: Cải cách ruộng đất và công nghiệp hóa',
-      'Giai đoạn thống nhất: Giải phóng miền Nam và thống nhất đất nước',
-      'Giai đoạn đổi mới: Tiếp tục phát triển trong thời kỳ hội nhập'
+      'Các dân tộc Việt Nam có lịch sử cộng đồng: cùng dựng nước và giữ nước',
+      'Truyền thống đoàn kết hình thành từ nhu cầu chinh phục thiên nhiên và chống ngoại xâm',
+      'Đoàn kết dân tộc là nguồn sức mạnh quyết định mọi thắng lợi lịch sử',
+      'Nền văn hóa Việt Nam thống nhất trong đa dạng, mỗi dân tộc góp phần làm giàu'
     ],
     evidence: [
-      'Cách mạng Tháng Tám 1945: Giành chính quyền trong cả nước',
-      'Kháng chiến chống Pháp 1946-1954: Bảo vệ độc lập dân tộc',
-      'Xây dựng chủ nghĩa xã hội ở miền Bắc 1954-1975',
-      'Cuộc chiến tranh bảo vệ Tổ quốc và làm nghĩa vụ quốc tế',
-      'Đổi mới từ 1986: Phát triển kinh tế thị trường định hướng xã hội chủ nghĩa'
+      'Các dân tộc cùng chống lại các cuộc xâm lược lịch sử',
+      'Xây dựng Tổ quốc thống nhất qua các thời kỳ',
+      'Mỗi dân tộc có bản sắc văn hóa riêng nhưng gắn bó với bản sắc chung',
+      'Cần phát huy truyền thống đại đoàn kết, chống chia rẽ dân tộc'
     ]
   },
   {
-    id: 'contemporary-relevance',
-    category: 'Ý nghĩa thời đại',
-    title: 'Giá trị trong giai đoạn hiện tại',
+    id: 'ethnic-policy-vietnam',
+    category: 'Chính sách dân tộc Việt Nam',
+    title: 'Mục tiêu và hướng đi',
     content: [
-      'Kim chỉ nam: Định hướng phát triển đất nước trong thời kỳ mới',
-      'Bản sắc dân tộc: Giữ gìn và phát huy bản sắc văn hóa dân tộc',
-      'Hội nhập quốc tế: Chủ động hội nhập trên cơ sở độc lập, tự chủ',
-      'Phát triển bền vững: Xây dựng xã hội công bằng, dân chủ, văn minh'
+      'Bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng tiến bộ',
+      'Xóa bỏ khoảng cách phát triển giữa các dân tộc',
+      'Nâng cao đời sống vật chất và tinh thần cho đồng bào dân tộc thiểu số',
+      'Phát huy bản sắc văn hóa và truyền thống đoàn kết'
     ],
     evidence: [
-      'Hiến pháp 2013: Khẳng định mục tiêu xây dựng nhà nước xã hội chủ nghĩa',
-      'Nghị quyết Đại hội XIII: Phát triển nhanh và bền vững',
-      'Chính sách đối ngoại: Độc lập, tự chủ, đa phương hóa, đa dạng hóa',
-      'Xây dựng Đảng: Trong sạch, vững mạnh theo tư tưởng Hồ Chí Minh'
+      'Chính sách hỗ trợ đặc biệt cho dân tộc rất ít người',
+      'Giảm dần chênh lệch phát triển giữa các dân tộc',
+      'Bảo vệ quyền sử dụng ngôn ngữ, phát triển văn hóa dân tộc',
+      'Kết hợp xây dựng và bảo vệ Tổ quốc, bảo đảm an ninh-quốc phòng'
     ]
   }
 ];

@@ -93,11 +93,11 @@ const DocumentsPage = () => {
             Tài liệu tham khảo
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-gradient">Nguồn tài liệu tham khảo</span>
+            <span className="text-gradient">Nguồn tài liệu về dân tộc</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Tổng hợp các tác phẩm, văn kiện và nghiên cứu học thuật đáng tin cậy
-            về tư tưởng Hồ Chí Minh.
+            về vấn đề dân tộc, cương lĩnh dân tộc Mác-Lênin và chính sách dân tộc Việt Nam.
           </p>
         </motion.div>
 

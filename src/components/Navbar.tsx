@@ -18,7 +18,7 @@ const navigationItems = [
   { path: '/timeline', label: 'Dòng thời gian', icon: Clock, description: 'Các sự kiện lịch sử' },
   { path: '/analysis', label: 'Phân tích', icon: BarChart3, description: 'So sánh quan điểm' },
   { path: '/conclusion', label: 'Kết luận', icon: FileText, description: 'Nhận định cuối cùng' },
-  { path: '/quiz', label: 'Ôn tập', icon: Star, description: 'Câu hỏi kiểm tra' },
+  { path: '/cq', label: 'Câu hỏi CQ', icon: Star, description: 'Trả lời câu hỏi chuyên đề' },
   { path: '/documents', label: 'Tài liệu', icon: BookOpen, description: 'Nguồn tham khảo' }
 ]
 
@@ -46,8 +46,8 @@ const Navbar = () => {
                 <Star className="w-3 h-3 text-yellow-500 absolute top-1.5 right-2.5 group-hover:rotate-45 group-hover:scale-125 transition-all duration-300 fill-yellow-500" />
               </div>
               <div>
-                <div className="text-xl font-bold text-gradient">Tư tưởng Hồ Chí Minh</div>
-                <div className="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-300">Lịch sử Đảng Cộng sản Việt Nam</div>
+                <div className="text-xl font-bold text-gradient">Dân tộc Việt Nam</div>
+                <div className="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-300">Lịch sử Dân Tộc Việt Nam</div>
               </div>
             </Link>
           </motion.div>

@@ -2,11 +2,19 @@ import type { HistoricalDocument } from '../types';
 
 export const historicalDocuments: HistoricalDocument[] = [
   {
-    id: 'ho-chi-minh-complete-works',
-    title: 'Hồ Chí Minh Toàn tập',
-    date: '1890-1969',
+    id: 'marxism-leninism-ethnicity',
+    title: 'Chủ nghĩa Mác-Lênin về dân tộc',
+    date: '1848-1920',
+    type: 'study',
+    description: 'Các tác phẩm cơ bản của Marx, Engels, Lênin về lý thuyết dân tộc và quyền tự quyết',
+    importance: 'primary'
+  },
+  {
+    id: 'lenin-national-question',
+    title: 'Luận cương về vấn đề dân tộc và thuộc địa',
+    date: '1920',
     type: 'agreement',
-    description: 'Tuyển tập đầy đủ các tác phẩm, bài viết, diễn văn của Chủ tịch Hồ Chí Minh về tư tưởng độc lập dân tộc và chủ nghĩa xã hội',
+    description: 'Tác phẩm cơ bản của V.I. Lênin về cương lĩnh dân tộc của chủ nghĩa Mác-Lênin',
     importance: 'primary'
   },
   {
@@ -14,7 +22,16 @@ export const historicalDocuments: HistoricalDocument[] = [
     title: 'Tuyên ngôn độc lập 2/9/1945',
     date: '2/9/1945',
     type: 'agreement',
-    description: 'Văn kiện lịch sử quan trọng thể hiện tư tưởng độc lập dân tộc gắn với dân chủ nhân dân của Hồ Chí Minh',
+    description: 'Văn kiện lịch sử khẳng định quyền bình đẳng của tất cả các dân tộc Việt Nam',
+    importance: 'primary'
+  },
+  {
+    id: 'viet-minh-platform',
+    title: 'Cương lĩnh của Mặt trận Việt Minh',
+    date: '1941',
+    type: 'law',
+    description: 'Văn kiện thể hiện tư tưởng đoàn kết toàn dân tộc chống thực dân',
+    url: 'https://vi.wikipedia.org/wiki/Việt_Minh',
     importance: 'primary'
   },
   {
@@ -27,101 +44,75 @@ export const historicalDocuments: HistoricalDocument[] = [
     importance: 'primary'
   },
   {
-    id: 'ho-chi-minh-testament',
-    title: 'Di chúc của Chủ tịch Hồ Chí Minh',
-    date: '10/5/1969',
+    id: 'ethnic-policy-documents',
+    title: 'Tài liệu về chính sách dân tộc của Đảng và Nhà nước',
+    date: '1945-nay',
     type: 'report',
-    description: 'Văn kiện cuối cùng tổng kết tư tưởng về độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh',
+    description: 'Các văn kiện chính sách dân tộc từ thời kỳ kháng chiến đến nay',
     importance: 'primary'
   },
   {
-    id: 'memoirs-revolutionary-leaders',
-    title: 'Hồi ký của các nhà cách mạng',
-    date: '1920-1970',
-    type: 'memoir',
-    description: 'Hồi ký và ký ức của các nhà cách mạng về tư tưởng và hoạt động của Hồ Chí Minh',
+    id: 'ethnic-minorities-research',
+    title: 'Nghiên cứu về các dân tộc thiểu số Việt Nam',
+    date: 'Hiện đại',
+    type: 'study',
+    description: 'Các nghiên cứu khoa học về đặc điểm, phát triển của các dân tộc thiểu số',
     importance: 'secondary'
   },
   {
-    id: 'ho-chi-minh-thought-institute',
-    title: 'Nghiên cứu tư tưởng Hồ Chí Minh - Học viện Chính trị Quốc gia',
+    id: 'ethnic-culture-documents',
+    title: 'Tài liệu về văn hóa các dân tộc Việt Nam',
     date: 'Hiện đại',
     type: 'study',
-    description: 'Nghiên cứu học thuật chính thức về tư tưởng Hồ Chí Minh từ Học viện Chính trị Quốc gia',
+    description: 'Tuyển tập tài liệu về bản sắc văn hóa của các dân tộc Việt Nam',
+    importance: 'secondary'
+  },
+  {
+    id: 'ethnic-development-strategy',
+    title: 'Chiến lược phát triển vùng dân tộc thiểu số',
+    date: '2000-nay',
+    type: 'report',
+    description: 'Các chiến lược, chương trình phát triển kinh tế-xã hội cho vùng dân tộc',
     importance: 'primary'
   },
   {
-    id: 'marxism-leninism-vietnam',
-    title: 'Chủ nghĩa Mác-Lênin và con đường cách mạng Việt Nam',
-    date: '1920-1930',
+    id: 'ethnic-solidarity-tradition',
+    title: 'Truyền thống đoàn kết dân tộc Việt Nam',
+    date: 'Hiện đại',
     type: 'study',
-    description: 'Nghiên cứu về quá trình tiếp nhận và vận dụng chủ nghĩa Mác-Lênin của Hồ Chí Minh',
+    description: 'Nghiên cứu về lịch sử đoàn kết và cộng đồng của các dân tộc Việt Nam',
     importance: 'secondary'
   },
   {
-    id: 'ho-chi-minh-biography',
-    title: 'Tiểu sử Hồ Chí Minh - Viện Sử học',
-    date: 'Hiện đại',
-    type: 'study',
-    description: 'Tiểu sử chính thức về cuộc đời và sự nghiệp của Chủ tịch Hồ Chí Minh',
-    importance: 'secondary'
-  },
-  {
-    id: 'national-independence-thought-analysis',
-    title: 'Phân tích tư tưởng độc lập dân tộc của Hồ Chí Minh',
-    date: 'Hiện đại',
-    type: 'study',
-    description: 'Nghiên cứu chuyên sâu về tư tưởng độc lập dân tộc trong tác phẩm của Hồ Chí Minh',
-    url: 'https://vi.wikipedia.org/wiki/Tư_tưởng_Hồ_Chí_Minh',
+    id: 'constitution-ethnic-rights',
+    title: 'Hiến pháp Việt Nam - Quyền của các dân tộc',
+    date: '1946-2013',
+    type: 'law',
+    description: 'Các quy định về quyền bình đẳng, tự quyết của các dân tộc trong Hiến pháp',
     importance: 'primary'
   },
   {
-    id: 'socialist-thought-vietnam',
-    title: 'Tư tưởng xã hội chủ nghĩa Việt Nam',
-    date: '1930-1969',
-    type: 'study',
-    description: 'Nghiên cứu về sự phát triển tư tưởng xã hội chủ nghĩa trong tác phẩm của Hồ Chí Minh',
-    url: 'https://vi.wikipedia.org/wiki/Chủ_nghĩa_xã_hội_Việt_Nam',
-    importance: 'secondary'
-  },
-  {
-    id: 'revolutionary-documents',
-    title: 'Tài liệu về các cuộc cách mạng Việt Nam',
-    date: '1930-1975',
-    type: 'report',
-    description: 'Tuyển tập tài liệu về các cuộc cách mạng do Hồ Chí Minh lãnh đạo',
+    id: 'ethnic-law-documents',
+    title: 'Các luật, pháp lệnh về dân tộc',
+    date: '1945-nay',
+    type: 'law',
+    description: 'Các văn bản pháp luật bảo vệ quyền lợi của các dân tộc',
     importance: 'primary'
   },
   {
-    id: 'party-congress-documents',
-    title: 'Văn kiện các kỳ Đại hội Đảng',
-    date: '1930-1975',
-    type: 'report',
-    description: 'Các văn kiện Đại hội Đảng thể hiện sự phát triển tư tưởng Hồ Chí Minh',
-    importance: 'primary'
-  },
-  {
-    id: 'contemporary-research',
-    title: 'Nghiên cứu đương đại về tư tưởng Hồ Chí Minh',
+    id: 'international-ethnic-documents',
+    title: 'Tài liệu quốc tế về quyền dân tộc',
     date: 'Hiện đại',
     type: 'report',
-    description: 'Các nghiên cứu hiện đại về ý nghĩa và giá trị của tư tưởng Hồ Chí Minh',
-    importance: 'secondary'
-  },
-  {
-    id: 'international-perspective',
-    title: 'Góc nhìn quốc tế về tư tưởng Hồ Chí Minh',
-    date: 'Hiện đại',
-    type: 'report',
-    description: 'Đánh giá của các học giả quốc tế về tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Hồ Chí Minh',
+    description: 'Các tuyên bố, công ước quốc tế về quyền của các dân tộc',
     importance: 'supplementary'
   },
   {
-    id: 'academic-dissertations',
-    title: 'Các luận án về tư tưởng Hồ Chí Minh',
+    id: 'ethnic-academic-research',
+    title: 'Các luận án, bài báo khoa học về dân tộc',
     date: 'Hiện đại',
     type: 'study',
-    description: 'Các nghiên cứu học thuật cấp cao về tư tưởng và di sản của Hồ Chí Minh',
+    description: 'Các nghiên cứu học thuật cấp cao về vấn đề dân tộc',
     importance: 'supplementary'
   }
 ];

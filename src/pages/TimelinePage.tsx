@@ -65,11 +65,11 @@ const TimelinePage = () => {
             Dòng thời gian lịch sử
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-gradient">Tư tưởng Hồ Chí Minh</span>
+            <span className="text-gradient">Vấn đề dân tộc qua các thời kỳ</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Theo dõi các mốc quan trọng trong quá trình hình thành và phát triển
-            tư tưởng độc lập dân tộc và chủ nghĩa xã hội của Chủ tịch Hồ Chí Minh.
+            Theo dõi các mốc quan trọng trong quá trình phát triển vấn đề dân tộc,
+            từ cương lĩnh dân tộc Mác-Lênin đến chính sách dân tộc Việt Nam hiện đại.
           </p>
         </motion.div>
 
