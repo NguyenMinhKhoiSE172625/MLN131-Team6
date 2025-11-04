@@ -242,7 +242,7 @@ const TimelinePage = () => {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Tổng quan giai đoạn 1954-1964
+            Tổng quan: Dân tộc trong thời kỳ quá độ lên Chủ nghĩa Xã hội
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

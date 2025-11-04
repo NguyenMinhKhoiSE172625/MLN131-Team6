@@ -50,7 +50,7 @@ const CQPage = () => {
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
                     <h2 className="text-xl font-bold text-gray-900 mb-2">
-                      Câu hỏi {item.id}: {item.question}
+                      Câu hỏi CQ: {item.question}
                     </h2>
                   </div>
                   <div className="ml-4 flex-shrink-0">
@@ -124,22 +124,6 @@ const CQPage = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Study Tips */}
-        <motion.div
-          className="mt-12 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl p-8 text-white"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          <h3 className="text-2xl font-bold mb-4">💡 Gợi ý học tập</h3>
-          <ul className="space-y-3">
-            <li>• Đọc kỹ từng phần của câu trả lời để hiểu sâu vấn đề</li>
-            <li>• Ghi chú những điểm chính để dễ nhớ</li>
-            <li>• Liên hệ với các chủ đề khác để có cái nhìn toàn diện</li>
-            <li>• Thảo luận với bạn bè để làm sâu sắc hiểu biết</li>
-          </ul>
-        </motion.div>
       </div>
     </div>
   )

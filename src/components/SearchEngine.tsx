@@ -140,7 +140,7 @@ const SearchEngine = () => {
 
   const getSectionLabel = (section: SearchResult['section']) => {
     switch (section) {
-      case 'timeline': return 'Dòng thời gian'
+      case 'timeline': return 'Nội Dung'
       case 'documents': return 'Tài liệu'
       case 'analysis': return 'Phân tích'
       default: return 'Khác'

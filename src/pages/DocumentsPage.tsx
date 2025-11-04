@@ -12,6 +12,7 @@ import {
   UserCheck,
   BarChart3,
   Star,
+  Users,
   // Clock, // Unused for now
   Globe
 } from 'lucide-react'
@@ -190,7 +191,7 @@ const DocumentsPage = () => {
 
         {/* Documents Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <AnimatePresence>
+          <AnimatePresence mode="wait">
             {filteredDocuments.map((document, index) => {
               const Icon = getDocumentIcon(document.type)
               const importanceBadge = getImportanceBadge(document.importance)
@@ -199,21 +200,18 @@ const DocumentsPage = () => {
                 <motion.div
                   key={document.id}
                   className={`bg-white rounded-2xl shadow-lg hover-lift cursor-pointer border-l-4 ${getImportanceColor(document.importance)} document-card overflow-hidden`}
-                  initial={{ opacity: 0, y: 30, scale: 0.9 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: -30, scale: 0.9 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
                   transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                    type: "spring",
-                    stiffness: 200
+                    duration: 0.3,
+                    delay: index * 0.05
                   }}
                   whileHover={{
                     scale: 1.02,
                     y: -8,
                     boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
                   }}
-                  layout
                 >
                   <div className="p-6">
                     {/* Header */}
@@ -348,6 +346,188 @@ const DocumentsPage = () => {
                 {documentTypes.length - 1}
               </div>
               <div className="text-purple-100">Loại tài liệu</div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Context Evidence Section */}
+        <motion.div
+          className="mt-12 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl shadow-lg p-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <BarChart3 className="w-8 h-8 text-green-600" />
+              <h3 className="text-3xl font-bold text-gray-900">Dẫn chứng từ bối cảnh kinh tế - xã hội</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Chính sách dân tộc trong thời kỳ quá độ lên CNXH được thể hiện rõ qua các dẫn chứng thực tế
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Economic Development */}
+            <motion.div
+              className="bg-white rounded-xl shadow-md p-6"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mr-3">
+                  <BarChart3 className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-gray-900">Phát triển kinh tế</h4>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Chương trình 135:</strong> Hỗ trợ phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi (1998-nay)</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Giảm nghèo:</strong> Tỷ lệ hộ nghèo vùng dân tộc thiểu số giảm từ 75% (1993) xuống 35% (2015)</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Cơ sở hạ tầng:</strong> 95% xã vùng dân tộc có đường ô tô đến trung tâm (2020)</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Thu nhập:</strong> Thu nhập bình quân đầu người vùng dân tộc tăng gấp 3 lần (2010-2020)</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            {/* Social Development */}
+            <motion.div
+              className="bg-white rounded-xl shadow-md p-6"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-gray-900">Phát triển xã hội</h4>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Giáo dục:</strong> Tỷ lệ biết chữ vùng dân tộc tăng từ 60% (1990) lên 92% (2020)</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Y tế:</strong> 100% xã vùng dân tộc có trạm y tế (2018), tuổi thọ trung bình tăng 10 năm</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Văn hóa:</strong> Bảo tồn 54 ngôn ngữ dân tộc, 15 loại chữ viết riêng được công nhận</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Chính trị:</strong> 17% đại biểu Quốc hội là người dân tộc thiểu số (2021)</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            {/* Cultural Preservation */}
+            <motion.div
+              className="bg-white rounded-xl shadow-md p-6"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mr-3">
+                  <BookOpen className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-gray-900">Bảo tồn văn hóa</h4>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Di sản UNESCO:</strong> Không gian văn hóa Cồng chiêng Tây Nguyên (2005)</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Lễ hội:</strong> Hơn 200 lễ hội truyền thống được tổ chức hàng năm</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Bảo tàng:</strong> Bảo tàng Dân tộc học Việt Nam lưu giữ 15,000+ hiện vật</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Truyền thông:</strong> Đài Tiếng nói Việt Nam phát sóng bằng 14 ngôn ngữ dân tộc</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            {/* Policy Implementation */}
+            <motion.div
+              className="bg-white rounded-xl shadow-md p-6"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mr-3">
+                  <Scale className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-gray-900">Chính sách pháp luật</h4>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Hiến pháp 2013:</strong> Khẳng định bình đẳng, đoàn kết, tương trợ giữa các dân tộc</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Nghị quyết 24-NQ/TW:</strong> Công tác dân tộc trong tình hình mới (2019)</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Chính sách ưu đãi:</strong> Miễn giảm học phí, hỗ trợ nhà ở, đất sản xuất</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="w-5 h-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Đào tạo cán bộ:</strong> Hơn 50,000 cán bộ dân tộc được đào tạo (2015-2020)</span>
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+
+          <div className="mt-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-6 text-white">
+            <div className="flex items-center justify-center mb-4">
+              <Globe className="w-6 h-6 mr-2" />
+              <h4 className="text-xl font-bold">Nguồn dẫn chứng</h4>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+              <div>
+                <p className="font-semibold mb-2">Văn kiện chính thống:</p>
+                <ul className="space-y-1 text-blue-100">
+                  <li>• Nghị quyết Đại hội Đảng toàn quốc</li>
+                  <li>• Báo cáo Tổng kết công tác dân tộc</li>
+                  <li>• Niên giám thống kê Việt Nam</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold mb-2">Nguồn học thuật:</p>
+                <ul className="space-y-1 text-blue-100">
+                  <li>• Viện Dân tộc học - Viện Hàn lâm KHXH VN</li>
+                  <li>• Ủy ban Dân tộc Việt Nam</li>
+                  <li>• Tạp chí Nghiên cứu Dân tộc</li>
+                </ul>
+              </div>
             </div>
           </div>
         </motion.div>

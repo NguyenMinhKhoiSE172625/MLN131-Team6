@@ -10,16 +10,18 @@ import {
   Menu,
   X,
   Star,
-  Flag
+  Flag,
+  Bot
 } from 'lucide-react'
 
 const navigationItems = [
   { path: '/', label: 'Trang chủ', icon: Home, description: 'Giới thiệu tổng quan' },
-  { path: '/timeline', label: 'Dòng thời gian', icon: Clock, description: 'Các sự kiện lịch sử' },
+  { path: '/timeline', label: 'Nội dung', icon: Clock, description: 'Các sự kiện lịch sử' },
   { path: '/analysis', label: 'Phân tích', icon: BarChart3, description: 'So sánh quan điểm' },
   { path: '/conclusion', label: 'Kết luận', icon: FileText, description: 'Nhận định cuối cùng' },
   { path: '/cq', label: 'Câu hỏi CQ', icon: Star, description: 'Trả lời câu hỏi chuyên đề' },
-  { path: '/documents', label: 'Tài liệu', icon: BookOpen, description: 'Nguồn tham khảo' }
+  { path: '/documents', label: 'Tài liệu', icon: BookOpen, description: 'Nguồn tham khảo' },
+  { path: '/ai-usage', label: 'AI Usage', icon: Bot, description: 'Sử dụng AI có trách nhiệm' }
 ]
 
 const Navbar = () => {

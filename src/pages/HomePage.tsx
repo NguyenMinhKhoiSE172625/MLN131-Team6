@@ -12,7 +12,10 @@ import {
   Award,
   Flag,
   Star,
-  Sword
+  Sword,
+  Bot,
+  Shield,
+  CheckCircle
 } from 'lucide-react'
 
 const HomePage = () => {
@@ -660,6 +663,58 @@ const HomePage = () => {
                 <div className="text-gray-600">Văn hóa</div>
               </div>
             </div>
+
+            {/* AI Usage Section */}
+            <motion.div
+              className="mb-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl shadow-xl p-8 text-white"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex items-center justify-center mb-6">
+                <Bot className="w-10 h-10 mr-3" />
+                <h3 className="text-2xl md:text-3xl font-bold">Sử dụng AI có trách nhiệm</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
+                  <div className="flex flex-col items-center text-center mb-2">
+                    <Shield className="w-6 h-6 mb-2" />
+                    <h4 className="font-semibold">Minh bạch</h4>
+                  </div>
+                  <p className="text-sm text-blue-100 text-center">
+                    Công khai công cụ AI, prompt và kết quả sử dụng
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
+                  <div className="flex flex-col items-center text-center mb-2">
+                    <CheckCircle className="w-6 h-6 mb-2" />
+                    <h4 className="font-semibold">Kiểm chứng</h4>
+                  </div>
+                  <p className="text-sm text-blue-100 text-center">
+                    Đối chiếu với văn kiện Đảng, nghị quyết chính thống
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
+                  <div className="flex flex-col items-center text-center mb-2">
+                    <Users className="w-6 h-6 mb-2" />
+                    <h4 className="font-semibold">Trách nhiệm</h4>
+                  </div>
+                  <p className="text-sm text-blue-100 text-center">
+                    Sinh viên chịu trách nhiệm nội dung cuối cùng
+                  </p>
+                </div>
+              </div>
+              <div className="text-center">
+                <Link
+                  to="/ai-usage"
+                  className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-xl hover:shadow-lg transition-all duration-300"
+                >
+                  Xem chi tiết AI Usage
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+              </div>
+            </motion.div>
 
             <div className="text-lg text-gray-700 leading-relaxed space-y-4">
               <p>

@@ -8,6 +8,7 @@ import AnalysisPage from './pages/AnalysisPage'
 import ConclusionPage from './pages/ConclusionPage'
 import CQPage from './pages/CQPage'
 import DocumentsPage from './pages/DocumentsPage'
+import AIUsagePage from './pages/AIUsagePage'
 import ScrollToTop from './components/ScrollToTop'
 import AIHistoricalAssistant from './components/AIHistoricalAssistant'
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/conclusion" element={<ConclusionPage />} />
             <Route path="/cq" element={<CQPage />} />
             <Route path="/documents" element={<DocumentsPage />} />
+            <Route path="/ai-usage" element={<AIUsagePage />} />
           </Routes>
         </AnimatePresence>
       </div>

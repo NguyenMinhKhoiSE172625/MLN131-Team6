@@ -21,9 +21,9 @@ const AnalysisPage = () => {
   const [selectedViewpoint, setSelectedViewpoint] = useState<'marxism' | 'vietnam' | 'policy' | 'comparison'>('policy')
 
   const viewpoints = [
-    { id: 'marxism', label: 'Chủ nghĩa Mác-Lênin về dân tộc', color: 'from-red-500 to-red-600', icon: XCircle },
-    { id: 'vietnam', label: 'Dân tộc Việt Nam', color: 'from-green-500 to-green-600', icon: CheckCircle },
-    { id: 'policy', label: 'Chính sách dân tộc', color: 'from-blue-500 to-blue-600', icon: Scale }
+    { id: 'marxism', label: 'Chủ nghĩa Mác-Lênin về dân tộc', color: 'from-blue-500 to-blue-600', icon: FileText },
+    { id: 'vietnam', label: 'Dân tộc Việt Nam', color: 'from-blue-500 to-blue-600', icon: FileText },
+    { id: 'policy', label: 'Chính sách dân tộc', color: 'from-blue-500 to-blue-600', icon: FileText }
   ]
 
   const getAnalysisIcon = (category: string) => {

@@ -398,9 +398,9 @@ const ConclusionPage = () => {
               <Flag className="w-8 h-8" />
             </div>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-              Tài liệu này cung cấp khung phân tích toàn diện về giai đoạn 1954-1964 ở Việt Nam,
-              giúp làm rõ tính chất thực sự của cuộc đấu tranh trong thời kỳ này và khẳng định
-              quan điểm khoa học, khách quan về lịch sử dân tộc.
+              Tài liệu này cung cấp khung phân tích toàn diện về vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội,
+              từ cương lĩnh dân tộc Mác-Lênin đến chính sách dân tộc của Việt Nam, khẳng định
+              quan điểm khoa học, khách quan về bình đẳng, đoàn kết và phát triển bền vững các dân tộc.
             </p>
             <div className="mt-6">
               <div className="inline-flex items-center px-6 py-3 bg-white/20 rounded-full">
